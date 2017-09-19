@@ -46,7 +46,7 @@ const schema = buildSchema(`
     assignee: String
     assigneeAvatar: String
     labels: [Label]
-    isPR: Boolean
+    isPR: Boolean!
   }
 
   type Label {
