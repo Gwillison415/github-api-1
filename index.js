@@ -22,7 +22,7 @@ function urlPath() {
   if (process.env.NODE_ENV === 'development') {
     return 'http://localhost:3000/';
   }
-  return 'http://someLiveURL.com/';
+  return 'https://databraid.net/';
 }
 
 
