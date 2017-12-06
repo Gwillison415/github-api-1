@@ -17,7 +17,8 @@ const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
 const PRODUCTION_CALLBACK_URL = process.env.PRODUCTION_CALLBACK_URL;
 const LOCAL_CALLBACK_URL = process.env.LOCAL_CALLBACK_URL;
-const REDIRECT_URL = process.env.REDIRECT_URL;
+const LOCAL_REDIRECT_URL = process.env.LOCAL_REDIRECT_URL;
+const PRODUCTION_REDIRCET_URL = process.env.PRODUCTION_REDIRECT_URL;
 
 app.use(morgan('combined'));
 app.use('/', partials());
