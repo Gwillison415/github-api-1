@@ -63,6 +63,9 @@ passport.use(new GitHubStrategy({
   }),
 ));
 
+
+
+
 app.get('/auth/github',
   passport.authenticate('github', { scope: ['user:email', 'read:org', 'notifications', 'repo'] }),
 );
@@ -88,6 +91,7 @@ app.get('/logout', (req, res) => {
   res.redirect(REDIRECT_URL);
 });
 app.use('/', (req, res) => {
+
   res.sendStatus(200);
 });
 
