@@ -4,7 +4,9 @@
 
 ## Description
 
-GraphQL endpoints housed in an Express server to access GitHub's API v3 and serve information to the Databraid GitHub Widget. Authentication happens with Oauth2 where you will be redirected to a GitHub sign in screen to allow Databraid access to some information about your GitHub account.
+GraphQL endpoints housed in an Express server to access GitHub's API v3 and serve information to the Databraid GitHub Widget. Authentication happens with Oauth2 where you will be redirected to a GitHub sign in screen to allow Databraid access to some scoped information about your GitHub account. All access is essential to the functionality of this website and nothing more. No user information is stored about the client on our servers such that it cannot be accessed by illicit third parties unless they already have access to your Github login credentials.
+
+We see this as a better practice than storing login credentials in our own server that may lead to a security breach. By not storing client information we remove the vulnerabilities associated with storing credentials that we would leverage to gain access to your public and private Github repository information. 
 
 ## Usage
 
